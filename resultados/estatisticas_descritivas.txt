@@ -1,0 +1,116 @@
+BASE DE TREINO: 6426 voos | BASE DE TESTE: 1607 voos
+
+=== taxitime (s) ===
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  434.0   678.5   826.7   871.4  1003.3  2167.9 
+desvio padrão: 271.2 
+
+=== por cabeceira ===
+   runway     N media_s mediana_s  dp_s
+   <fctr> <int>   <num>     <num> <num>
+1:    10L  4562   788.6     751.5 210.6
+2:    28R  1864  1074.2     985.5 295.2
+
+=== por categoria de esteira ===
+      wtc     N media_s mediana_s  dp_s
+   <fctr> <int>   <num>     <num> <num>
+1:      M  5831   849.1     804.2 264.6
+2:      H   595  1090.6    1060.0 235.5
+
+=== doméstico x internacional ===
+    destino_tipo     N media_s mediana_s  dp_s
+          <fctr> <int>   <num>     <num> <num>
+1:     Doméstico  5097   845.2     796.2 268.9
+2: Internacional  1329   971.9     932.8 256.3
+
+=== por companhia aérea ===
+    airline     N media_s mediana_s  dp_s
+     <fctr> <int>   <num>     <num> <num>
+ 1:     TAM  3520   872.8     823.2 273.7
+ 2:     GLO  1835   855.5     808.3 268.2
+ 3:     AZU   448   813.3     778.0 279.4
+ 4:     LAN   191   927.4     867.7 243.3
+ 5:     CMP    84   865.4     841.3 142.1
+ 6:     AAL    82  1114.0    1112.6 239.0
+ 7:     THY    77  1002.2     984.4 183.3
+ 8:     ARG    66   754.9     696.3 240.5
+ 9:     UAL    64  1087.7    1033.3 248.1
+10:     QTR    59   937.7     950.2 167.0
+
+=== por tipo de aeronave ===
+      acft     N media_s mediana_s  dp_s
+    <fctr> <int>   <num>     <num> <num>
+ 1:   A321  1470   855.0     804.6 267.0
+ 2:   A320  1442   842.6     798.0 256.5
+ 3:   B738  1077   826.0     784.1 267.8
+ 4:   B38M   813   888.1     832.0 264.9
+ 5:   A20N   261   827.6     778.5 271.5
+ 6:   A319   231   848.0     811.3 256.6
+ 7:   B789   230  1122.8    1083.1 227.4
+ 8:   A21N   220   871.6     850.1 267.0
+ 9:   E295   143   796.6     769.2 286.7
+10:   B77W   136  1152.9    1105.5 257.6
+11:   B39M    84   865.4     841.3 142.1
+12:   E195    79   875.2     837.0 323.4
+13:   A359    72   998.8     981.9 183.7
+14:   B772    44  1014.7    1000.8 208.6
+15:   A35K    35   996.6     994.1 146.2
+16: OUTROS    26   988.9    1019.8 268.0
+17:   B77L    23   895.8     808.6 188.3
+18:   B764    20  1078.2    1041.3 275.8
+19:   B788    20  1133.1    1169.0 292.6
+
+=== por fenômeno meteorológico (wx) ===
+      wx     N media_s mediana_s  dp_s
+   <num> <int>   <num>     <num> <num>
+1:     0  6285   865.8     824.2 264.7
+2:     1   141  1120.5    1010.7 407.1
+
+=== por dia da semana ===
+   dia_semana     N media_s mediana_s  dp_s
+       <fctr> <int>   <num>     <num> <num>
+1:        qui  1054   843.4     808.9 247.1
+2:        sex  1012   928.4     859.9 331.6
+3:        sab   976   899.1     861.3 261.7
+4:        ter   858   851.5     808.3 265.1
+5:        qua   852   856.6     826.2 230.3
+6:        seg   852   889.7     833.9 295.2
+7:        dom   822   821.5     794.2 229.0
+
+=== variáveis numéricas ===
+    taxitime         nactive         push_10         push_20      
+ Min.   : 434.0   Min.   : 0.00   Min.   :0.000   Min.   : 0.000  
+ 1st Qu.: 678.5   1st Qu.: 3.00   1st Qu.:1.000   1st Qu.: 3.000  
+ Median : 826.7   Median : 5.00   Median :2.000   Median : 5.000  
+ Mean   : 871.4   Mean   : 5.75   Mean   :2.374   Mean   : 4.844  
+ 3rd Qu.:1003.3   3rd Qu.: 8.00   3rd Qu.:3.000   3rd Qu.: 7.000  
+ Max.   :2167.9   Max.   :23.00   Max.   :9.000   Max.   :14.000  
+    push_30          push_60         gap_push         wind_speed    
+ Min.   : 0.000   Min.   : 0.00   Min.   :   1.10   Min.   : 0.000  
+ 1st Qu.: 5.000   1st Qu.: 9.00   1st Qu.:  72.16   1st Qu.: 4.000  
+ Median : 7.000   Median :14.00   Median : 180.74   Median : 6.000  
+ Mean   : 7.248   Mean   :14.11   Mean   : 310.03   Mean   : 6.137  
+ 3rd Qu.:10.000   3rd Qu.:19.00   3rd Qu.: 377.06   3rd Qu.: 8.000  
+ Max.   :18.000   Max.   :32.00   Max.   :3600.00   Max.   :21.000  
+   vento_proa      vento_cruzado          wx             hora_sin       
+ Min.   :-12.688   Min.   : 0.000   Min.   :0.00000   Min.   :-1.00000  
+ 1st Qu.:  1.690   1st Qu.: 1.553   1st Qu.:0.00000   1st Qu.:-0.71623  
+ Median :  4.015   Median : 2.958   Median :0.00000   Median :-0.22350  
+ Mean   :  3.978   Mean   : 3.431   Mean   :0.02194   Mean   :-0.09284  
+ 3rd Qu.:  6.364   3rd Qu.: 4.915   3rd Qu.:0.00000   3rd Qu.: 0.62629  
+ Max.   : 16.421   Max.   :17.202   Max.   :1.00000   Max.   : 1.00000  
+    hora_cos         domestico     
+ Min.   :-1.0000   Min.   :0.0000  
+ 1st Qu.:-0.7666   1st Qu.:1.0000  
+ Median :-0.3228   Median :1.0000  
+ Mean   :-0.1188   Mean   :0.7932  
+ 3rd Qu.: 0.6841   3rd Qu.:1.0000  
+ Max.   : 1.0000   Max.   :1.0000  
+
+=== correlação de Pearson com o taxitime ===
+      nactive       push_20       push_30       push_10       push_60 
+        0.677         0.170         0.168         0.164         0.153 
+           wx    wind_speed      hora_cos vento_cruzado    vento_proa 
+        0.138         0.104         0.060         0.052         0.021 
+     hora_sin      gap_push     domestico 
+       -0.034        -0.087        -0.189 

@@ -1,0 +1,28 @@
+modelo,config,rmse_cv
+LM,sem_hp=1,134.37
+ARVORE,minsplit=10,144.09
+ARVORE,minsplit=20,143.63
+ARVORE,minsplit=40,144.34
+KNN,k=5,149.04
+KNN,k=10,146.35
+KNN,k=15,147.83
+KNN,k=20,149.88
+KNN,k=30,154.19
+SVM,cost=1 gamma_rel=0.25 epsilon=0.1,139.05
+SVM,cost=4 gamma_rel=0.25 epsilon=0.1,138
+SVM,cost=16 gamma_rel=0.25 epsilon=0.1,140.98
+SVM,cost=1 gamma_rel=0.5 epsilon=0.1,141.23
+SVM,cost=4 gamma_rel=0.5 epsilon=0.1,141.5
+SVM,cost=16 gamma_rel=0.5 epsilon=0.1,146.75
+SVM,cost=1 gamma_rel=1 epsilon=0.1,147.11
+SVM,cost=4 gamma_rel=1 epsilon=0.1,147.85
+SVM,cost=16 gamma_rel=1 epsilon=0.1,157.71
+RN,size=3 decay=0.3 maxit=400 seeds=3,132.84
+RN,size=6 decay=0.3 maxit=400 seeds=3,135.64
+RN,size=10 decay=0.3 maxit=400 seeds=3,138.01
+RN,size=3 decay=1 maxit=400 seeds=3,132.62
+RN,size=6 decay=1 maxit=400 seeds=3,133.9
+RN,size=10 decay=1 maxit=400 seeds=3,135.79
+RN,size=3 decay=3 maxit=400 seeds=3,132.86
+RN,size=6 decay=3 maxit=400 seeds=3,133.65
+RN,size=10 decay=3 maxit=400 seeds=3,133.25

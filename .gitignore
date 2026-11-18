@@ -1,4 +1,11 @@
+# R
 .Rhistory
 .RData
 .Rproj.user/
 *.Rproj
+
+# material das aulas (não faz parte da solução)
+Aula */
+
+# arquivo intermediário gerado pelo 01_preparacao.R
+dados/data_features.Rda

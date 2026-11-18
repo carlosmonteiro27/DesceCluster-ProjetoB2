@@ -1,0 +1,7 @@
+metodo,num_leaves,min_data_in_leaf,feature_fraction,lambda_l2,best_iter,rmse_cv,segundos
+lgb,31,5,0.5,1,936,119.512,57
+lgb,31,10,0.5,1,918,119.431,84
+lgb,31,20,0.5,1,923,119.712,96
+lgb,31,5,0.8,1,773,119.682,42
+lgb,31,10,0.8,1,835,119.96,63
+lgb,31,20,0.8,1,802,120.112,49
