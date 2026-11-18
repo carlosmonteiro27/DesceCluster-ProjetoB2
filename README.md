@@ -22,6 +22,12 @@ load("submissao/data_project_test_grupoDesceCluster.Rda")
 summary(data_test$taxitime)
 ```
 
+## Apresentação
+
+📊 [`apresentacao/DesceCluster_ProjetoB2_apresentacao.pdf`](apresentacao/DesceCluster_ProjetoB2_apresentacao.pdf)
+
+Slides da apresentação oral de 25/11/2026 (16 slides): problema e motivação, dados e pré-processamento, análise exploratória, métodos e treinamento, resultados com o modelo final e conclusões.
+
 ## Resultado
 
 As métricas abaixo vêm da validação cruzada 5-fold na base de treino (6.426 voos), com previsões fora da amostra e as mesmas partições para todos os modelos.
@@ -73,6 +79,8 @@ No RStudio, defina a pasta do projeto como diretório de trabalho e rode `source
 
 ```
 ├── rodar_tudo.R                 executa o pipeline completo
+├── apresentacao/
+│   └── DesceCluster_ProjetoB2_apresentacao.pdf   slides da apresentação oral
 ├── dados/
 │   └── data_project.Rda         bases de treino (6.426 voos) e teste (1.607 voos)
 ├── scripts/                     00 a 05 (tabela acima)
